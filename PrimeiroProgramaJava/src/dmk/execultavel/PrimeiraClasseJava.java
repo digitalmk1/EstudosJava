@@ -6,27 +6,34 @@ public class PrimeiraClasseJava
 { 
 	public static void main(String[] args) {
 		
-	Pessoa pessoa = new Pessoa();
-	pessoa.setEmail("pessoa@gmail.com");
-	pessoa.setNome("Marcio");
-	pessoa.setSobrenome("Silva de Oliveira");
+	double nota1 = 10;	
+	double nota2 = 10;
+	double nota3 = 10;
+	double nota4 = 8;
 	
-	System.out.println("Nome:" + pessoa.getNome());
-	System.out.println( pessoa.getSobrenome());
-	System.out.println("Email"+ pessoa.getEmail());
 	
-	System.out.println("====================================");
-	Pessoa p = new Pessoa();
-	p.setEmail("pessoa2@gmail.com");
-	p.setNome("Marcio2");
-	p.setSobrenome("Oliveira");
+	double media = (nota1+nota2+nota3+nota4)/4;
+	/*
+	if (media >= 70) {
+		
+		System.out.println("Aluno aprovado: " + media);
+	}
+	 if(media >= 40 && media <= 69)
+	 {
+		 System.out.println("Aluno em Recuperacao com media "+ media);
+	 }
+	 else if(media < 40){
+		 
+		 System.out.println("Aluno Reprovado com media " + media);
+	 }
+	 */
 	
-	System.out.println("Nome:" + p.getNome());
-	System.out.println(p.getSobrenome());
-	System.out.println("Email: "+ p.getEmail());
+	//Operadores ternarios
+	  String SaidaResultador;
+	  SaidaResultador = media>= 70? "Aluno Aprovado" :(media >= 40 && media <= 69)? "Aluno em Recuperacao" : "Aluno Reprovado";
+	  
+	  System.out.println(SaidaResultador);
 	}
 	
 	
-  
-
 }
