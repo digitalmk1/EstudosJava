@@ -11,6 +11,7 @@ public class Exercicio_for {
 				System.out.println("Oba encontrei o numero "+ numero);
 				continue;
 			}
+			System.out.println("Processando laço de repetição");
 		}
 	}
 }
